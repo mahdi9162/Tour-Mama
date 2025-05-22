@@ -1,3 +1,3 @@
 # Tour-Mama
 
-<img src="design.png"/>
+<img width="100%" src="design.png"/>
