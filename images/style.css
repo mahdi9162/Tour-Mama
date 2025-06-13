@@ -2,163 +2,283 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    font-family: "Plus Jakarta Sans", sans-serif;
 }
 
 html,
 body {
-    width: 100%;
-    background-color: #FBF7FF;
+    min-height: 100vh;
+    background-image: linear-gradient(#FFFFFF, #EBDCFF);
 }
 
 /* Hero Section's Articles  */
 
-.hero-sec {
+#hero-container {
     background-image: linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, .5)), url("hero-bg.png");
-    max-width: 2000px;
-    width: 90%;
-    height: auto;
-    margin: 100px auto;
-    border: 1px solid #F5EDFF;
-    border-radius: 25px;
+    width: 87.5%;
+    margin: 100px auto 120px auto;
+    border: 2px solid #872BFF10;
+    border-radius: 40px;
+    padding: 20px 30px;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.hero-con {
+    width: 50%;
+    margin-left: 40px;
+}
+
+.hero-con * {
+    margin-bottom: 30px;
+
 }
 
 .hero-con h1 {
-    margin-top: 120px;
-    margin-left: 100px;
-    font-size: 75px;
-    color: #1C1C1C
+    font-size: 70px;
+    color: #1C1C1C;
+    font-weight: bold;
 }
 
-.hero-con span {
+.hero-con h1 span {
     color: #F411CF;
 }
 
 .hero-con p {
-    margin-top: 30px;
-    margin-left: 100px;
-    font-size: 20px;
-    color: cadetblue;
-    font-weight: 700;
+    font-size: 18px;
+    color: #1C1C1C;
+    font-weight: 350;
 }
 
-
-
-.button {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-left: 100px;
-}
-
-.btn1 {
-    padding: 10px;
-    padding-left: 40px;
-    padding-right: 40px;
+.btn {
+    padding: 16px 32px;
+    margin-right: 10px;
     background-color: #872BFF;
     color: white;
     font-weight: 700;
-    border-radius: 50px;
+    border-radius: 30px;
     border: none;
+    cursor: pointer;
+
+}
+
+.btn-white {
+    padding: 16px 32px;
     margin-right: 10px;
-}
-
-.btn2 {
-    padding: 10px;
-    padding-left: 40px;
-    padding-right: 40px;
-    background-color: #FFFFFF;
-    color: black;
-    border-radius: 50px;
-    border: 1px solid #872BFF;
     font-weight: 700;
+    border-radius: 30px;
+    border: 2px solid #872BFF;
+    cursor: pointer;
 }
-
-/* Hero section's Img */
 
 .hero-img {
-    display: flex;
-    align-items: flex-end;
-    position: relative;
-    left: 400px;
+    width: 40%;
 }
+
 
 /* Service Section */
 
-.services-sec {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+#service-con,
+#explore,
+#country,
+#tourist-review-con {
+    width: 87.5%;
+    margin: 0px auto 120px auto;
 }
 
-.service-head {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.heading-con {
+    text-align: center;
 }
 
-.service-head p {
+.heading-con h4 {
+    color: #F411CF;
+    font-weight: bold;
+    font-size: 24px;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+}
+
+.heading-con h2 {
+    font-size: 44px;
+    color: #1C1C1C;
+    font-weight: bold;
+    margin-bottom: 60px;
+}
+
+#service-card-con {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.service-card {
+    background-color: #FFFFFF;
+    padding: 60px;
+    text-align: center;
+    width: 350px;
+    border-radius: 30px;
+}
+
+.service-card img {
     margin-bottom: 30px;
-    color: #872BFF;
-    text-align: center;
-
-    & span {
-        font-size: 32px;
-        color: #1C1C1C;
-        font-weight: 700;
-    }
 }
 
-.service-1 {
-    width: 300px;
-    height: auto;
-    margin-bottom: 100px;
-    border-radius: 20px;
-    background-color: #FFFFFF;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.service-2 {
-    width: 300px;
-    height: auto;
-    margin-bottom: 100px;
-    border-radius: 20px;
-    background-color: #FFFFFF;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.service-3 {
-    width: 300px;
-    height: auto;
-    margin-bottom: 100px;
-    border-radius: 20px;
-    background-color: #FFFFFF;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.ser-img {
-    padding-top: 80px;
-    padding-bottom: 50px;
-}
-
-h2 {
-    letter-spacing: 1.5px;
-    word-spacing: 2px;
+.service-card h2 {
+    font-size: 28px;
+    font-weight: 600;
     margin-bottom: 20px;
-    
 }
 
-.ser-p {
+.service-card p {
+    color: #F411CF;
+}
+
+/* Explore Section */
+
+.explore-card {
+    background-color: #FFFFFF;
+    padding: 40px;
+    border-radius: 24px;
+    display: flex;
+    gap: 20px;
+}
+
+.explore-articles h2,
+.explore-articles p,
+.explore-articles img {
+    margin-bottom: 30px;
+}
+
+/* Country Cover */
+
+#country-card-con {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 40px 30px;
+}
+
+#country-card-con h2 {
+    background-color: #FFFFFF;
+    padding: 40px;
+    border-radius: 16px;
+}
+
+.country-btn {
+    display: flex;
+    justify-content: center
+}
+
+.country-btn button {
+    padding: 16px 32px;
+    margin-right: 10px;
+    background-color: #872BFF;
+    color: white;
+    font-weight: 700;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Reviews */
+
+#review-card {
+    width: 80%;
+    background-color: #FFFFFF;
+    border-radius: 50px;
+    margin: 0px auto 50px auto;
+}
+
+.review-card-con {
+    display: flex;
+    align-items: center;
     text-align: center;
-    margin-bottom: 80px;
-    color: cadetblue;;
 }
 
+.review-card-con img {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    margin: 20px 45px 0px 45px;
+}
+
+.review-card-con p {
+    margin-top: 40px;
+    word-spacing: 2px;
+    text-align: justify;
+}
+
+#reviewer-rate {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.reviewer-name,
+.star-ratting {
+    margin-bottom: 30px;
+}
+
+.reviewer-name {
+    text-align: center;
+}
+
+.reviewer-name h4 {
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+
+.star-ratting {
+    margin-right: 120px;
+    margin-left: 300px;
+}
+
+.star-ratting i {
+    font-size: 30px;
+    color: #F411CF50
+}
+
+
+/* Footer */
+
+.foot {
+
+    width: 100%;
+    margin: 0px auto;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.copy-name p {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #F411CF;
+}
+
+.copy-name span {
+    font-weight: normal;
+    color: #1C1C1C;
+}
+
+.social-media {
+    padding-bottom: 20px;
+}
+
+.fb {
+    margin-right: 20px;
+    text-decoration: none;
+    font-size: 26px;
+}
+
+.insta {
+    text-decoration: none;
+    font-size: 26px;
+}

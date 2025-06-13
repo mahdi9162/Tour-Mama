@@ -4,48 +4,206 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Tour Mama </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="icons8-tour-100.png" type="image/png">
     <link rel="stylesheet" href="style.css">
+    <title> Tour Mama </title>
 </head>
 
 <body>
-    <div class="hero-sec">
-        <div class="hero-con">
-            <h1> From <br /> Southeast Asia <br /> <span> to the World </span> </h1>
-            <p> Stay updated with travel tips, recommendations and latest promos.</p>
-            <div class="button">
-                <button class="btn1"> Get Started </button>
-                <button class="btn2"> Watch Demo </button>
+    <!-- Hero Section -->
+
+    <div id="hero-sec">
+        <div id="hero-container">
+            <div class="hero-con">
+                <h1> From <br /> Southeast Asia <br /> <span> to the World </span> </h1>
+                <p> Stay updated with travel tips, recommendations and latest promos.</p>
+                <div class="button">
+                    <button class="btn"> Get Started </button>
+                    <button class="btn-white"> Watch Demo </button>
+                </div>
+            </div>
+
+            <div class="hero-img">
+                <img src="hero.png" alt="Beatiful Views">
             </div>
         </div>
+    </div>
 
-        <div class="hero-img">
-            <img src="hero.png" alt="Beatiful Views">
+    <!-- Service Section -->
+
+    <div id="services-sec">
+        <div id="service-con">
+            <div class="heading-con">
+                <h4> SERVICES </h4>
+                <h2> Why book using Tour Mama </h2>
+            </div>
+            <div id="service-card-con">
+                <!-- card 1 -->
+                <div class="service-card">
+                    <img class="ser-img" src="bag.png" alt="bag">
+                    <h2> All You Needs </h2>
+                    <p class="ser-p"> From flights, stays, to sights, <br /> just count on our complete <br /> products.
+                    </p>
+                </div>
+                <!-- card 2 -->
+                <div class="service-card">
+                    <img class="ser-img" src="books.png" alt="books">
+                    <h2> Flexible Booking </h2>
+                    <p class="ser-p"> From flights, stays, to sights, <br /> just count on our complete <br /> products.
+                    </p>
+                </div>
+                <!-- card 3 -->
+                <div class="service-card">
+                    <img class="ser-img" src="card.png" alt="cards">
+                    <h2> Secure Payment </h2>
+                    <p class="ser-p"> From flights, stays, to sights, <br /> just count on our complete <br /> products.
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
 
-    <div class="service-head">
-        <p> SERVICES <br /> <span> Why book using travelo </span></p>
-    </div>
-    <div class="services-sec">
-        <div class="service-1">
-            <img class="ser-img" src="bag.png" alt="bag">
-            <h2> All You Needs </h2>
-            <p class="ser-p"> From flights, stays, to sights, <br /> just count on our complete <br /> products. </p>
-        </div>
-        <div class="service-2">
-            <img class="ser-img" src="books.png" alt="books">
-            <h2> Flexible Booking </h2>
-            <p class="ser-p"> From flights, stays, to sights, <br /> just count on our complete <br /> products. </p>
-        </div>
-        <div class="service-3">
-            <img class="ser-img" src="card.png" alt="cards">
-            <h2> Secure Payment </h2>
-            <p class="ser-p"> From flights, stays, to sights, <br /> just count on our complete <br /> products. </p>
+    <!-- Explore Section -->
+
+    <div id="explore-section">
+        <div id="explore">
+            <div class="heading-con">
+                <h4> BEST OF ASIA </h4>
+                <h2> Explore the top spots of Asia </h2>
+            </div>
+            <div id="explore-card-con">
+                <div class="explore-card">
+                    <div class="explore-img">
+                        <img src="chaina-wall.png" alt="The Great Wall of China">
+                    </div>
+                    <div class="explore-articles">
+                        <h2> Great Wall of China </h2>
+                        <img src="chaina.png" alt="China Flag">
+                        <p> Not until the creation and maintenance of decent conditions of life for all people are
+                            recognized
+                            <br />
+                            and accepted as a common obligation of all people and all countries-not until then shall we,
+                            <br />
+                            with
+                            a certain degree of justification, be able to speak of humankind as civilized.
+                        </p>
+                        <button class="btn"> Book Now </button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
-    
+    <!-- Country List -->
+
+    <div id="country-container">
+        <div id="country">
+            <div class="heading-con">
+                <h4> COUNTRIES WE COVER </h4>
+                <h2> Explore all countries in Asia </h2>
+            </div>
+
+            <div id="country-card-con">
+                <h2>Bangladesh</h2>
+                <h2>INDIA</h2>
+                <h2>MALDIVES</h2>
+                <h2>BHUTAN</h2>
+                <h2>CHINA</h2>
+                <h2>THAILAND</h2>
+                <h2>JAPAN</h2>
+            </div>
+            <div class="country-btn">
+                <button> Explore Now </button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Reviews -->
+
+    <div id="tourist-review">
+        <div id="tourist-review-con">
+            <div class="heading-con">
+                <h4> COUNTRIES WE COVER </h4>
+                <h2> Explore all countries in Asia </h2>
+            </div>
+            <div id="review-card">
+                <div class="review-card-con">
+                    <img src="moin.jpg" alt="Reviewer pic">
+                    <P> My experience with Tour Mama was truly exceptional! From the very beginning, I was thoroughly
+                        impressed with their detailed planning and <br />constant support. The itinerary was perfectly
+                        balanced, allowing us to explore without feeling rushed. The entire trip was very smooth,
+                        from <br /> the airport pickup to hotel check-ins; everything was handled flawlessly.
+                        The destinations they chose were truly amazing, and the local <br /> guides were not only
+                        friendly but also incredibly knowledgeable. Their customer service team was always responsive
+                        and ready to help with <br /> any queries. I will definitely choose them again for my next
+                        adventure!
+                    </P>
+                </div>
+                <div id="reviewer-rate">
+                    <div class="reviewer-name">
+                        <h2> Moin Khan </h2>
+                        <h4> Travel Enthusiast </h4>
+                    </div>
+                    <div class="star-ratting">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div id="review-card">
+                <div class="review-card-con">
+                    <img src="Fazle.jpg" alt="Reviewer pic">
+                    <P> I had been searching for a good and reliable travel agency for a long time, and finding Tour
+                        Mama was a relief. Their packages are <br /> very well-organized,offering great value without
+                        compromising on quality, which I found to be very affordable. Their communication <br /> system
+                        is excellent, as they kept us updated throughout the journey. What stood out was their
+                        incredible attention to every little detail,<br /> which is truly commendable. For anyone
+                        looking for a seamless and hassle-free travel experience, I can confidently say that <br /> Tour
+                        Mama is the best choice.
+                    </P>
+                </div>
+                <div id="reviewer-rate">
+                    <div class="reviewer-name">
+                        <h2> Fazle Rabby </h2>
+                        <h4> Adventure Seeker </h4>
+                    </div>
+                    <div class="star-ratting">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="foot">
+            <div class="copy-name">
+                <p> &copy Mahdi Hasan <span> (All right Reserved) </span> </p>
+            </div>
+            <div class="social-media">
+                <a href="https://www.facebook.com/mahdi916" target="_blank" class="fb"> <i
+                        class="fa-brands fa-facebook"> </i> </a>
+                <a href="https://www.instagram.com/hasanmahdi0707/?hl=en" target="_blank" class="insta"> <i
+                        class="fa-brands fa-square-instagram"></i> </a>
+            </div>
+        </div>
+    </footer>
 
 </body>
 
